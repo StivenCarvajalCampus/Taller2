@@ -1,5 +1,7 @@
- let numero = parseFloat( prompt("Ingrese su nota1:"));
+import {calcularvoltaje} from './voltage.js';
 
- const result= (numero % 2 == 0)  ? "es par y ": "es impar y ";
- const result2= (numero >=10 ) ? "es mayor que 10":" es menor que 10";
- console.log(result+result2 )
+const resistencia = prompt ("introduce el valor de resistencia ")
+const intensidad = prompt("introduce el valor de intensidad")
+
+const voltaje = calcularvoltaje(resistencia,intensidad);
+console.log("El valor del voltaje es ", voltaje);
